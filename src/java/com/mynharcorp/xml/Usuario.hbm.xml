@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01/06/2020 05:14:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="jugadordb" name="com.mynharcorp.model.Usuario" optimistic-lock="version" table="usuario">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="clave" type="string">
+      <column name="clave"/>
+    </property>
+    <property name="nombre" type="string">
+      <column name="nombre"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01/06/2020 05:14:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="jugadordb" name="com.mynharcorp.model.Camiseta" optimistic-lock="version" table="camiseta">
+    <composite-id class="com.mynharcorp.model.CamisetaId" name="id">
+      <key-property name="id" type="int">
+        <column name="id"/>
+      </key-property>
+      <key-property name="idMarca" type="int">
+        <column name="idMarca"/>
+      </key-property>
+    </composite-id>
+    <property name="numero" type="string">
+      <column length="45" name="numero" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
